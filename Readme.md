@@ -10,7 +10,7 @@
 
 ## Part 2
 
-[Cсылка на видео]()
+[Cсылка на видео](https://drive.google.com/file/d/10U_k07riA69WynqAkTCM1bJutE0utNo_/view?usp=share_link)
 
 Запрос 1. Получить список юзернеймов пользователей
 	
