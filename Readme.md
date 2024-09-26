@@ -25,12 +25,13 @@
 
 Запрос 3. Получить пользователя с самым большим количеством полученных сообщений и само количество:
 	
-	SELECT username, COUNT(*) AS " number_of_received_messages"
+	SELECT username, COUNT(*) AS "number of received messages"
 	FROM messages
-	JOIN users ON message.to = users.id
+	JOIN users ON messages.to = users.id
 	GROUP BY username
-	ORDER BY COUNT(*) DECS
+	ORDER BY COUNT(*) DESC
 	LIMIT 1;
+
 
 Запрос 4. Получить среднее количество сообщений, отправленное каждым пользователем
 	
