@@ -25,19 +25,21 @@
 
 Запрос 3. Получить пользователя с самым большим количеством полученных сообщений и само количество:
 	
-	SELECT u.username, COUNT(m.id) AS number_of_received_messages
-	FROM users u
-	LEFT JOIN messages m ON u.id = m."to"
-	GROUP BY u.username
-	ORDER BY number_of_received_messages DESС
+	SELECT username, COUNT(*) AS " number_of_received_messages"
+	FROM messages
+	JOIN users ON message.to = users.id
+	GROUP BY username
+	ORDER BY COUNT(*) DECS
 	LIMIT 1;
 
 Запрос 4. Получить среднее количество сообщений, отправленное каждым пользователем
 	
-	SELECT AVG(messages_sent) AS average_sent_messages
-    FROM (
-        SELECT COUNT(m.id) AS messages_sent
-        FROM users u
-        LEFT JOIN messages m ON u.id = m."from"
-        GROUP BY u.id
-    ) AS subquery;
+	SELECT username, AVG(cnt) AS "average number of sent messages"
+	FROM(
+	SELECT messages.from, COUNT(*) AS cnt
+	FROM message
+	GROUP BY messages.from
+	) AS message_count
+	JOIN users ON message_count.from = users.id
+	GROUP BY username;
+
