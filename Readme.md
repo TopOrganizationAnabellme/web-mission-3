@@ -2,7 +2,7 @@
 
 ## Part 0
 
-[Ссылка на базу данных]( https://supabase.com/dashboard/project/sahwximyzcsylxepdehs/editor/29133?schema=public)
+[Ссылка на базу данных](https://supabase.com/dashboard/project/sahwximyzcsylxepdehs/editor/29133?schema=public)
 
 ## Part 1
 
@@ -10,7 +10,7 @@
 
 ## Part 2
 
-[Cсылка на видео](https://drive.google.com/file/d/10U_k07riA69WynqAkTCM1bJutE0utNo_/view?usp=share_link)
+[Cсылка на видео](https://drive.google.com/file/d/1Uj6TnLeH7DXjVmBWOl3Ho_jd8P-_D9Ra/view?usp=share_link)
 
 Запрос 1. Получить список юзернеймов пользователей
 	
