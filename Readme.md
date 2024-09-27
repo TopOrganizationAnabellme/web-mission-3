@@ -10,7 +10,7 @@
 
 ## Part 2
 
-[Cсылка на видео](https://drive.google.com/file/d/1Uj6TnLeH7DXjVmBWOl3Ho_jd8P-_D9Ra/view?usp=share_link)
+[Cсылка на видео](https://drive.google.com/file/d/1nB9jw3QFf-WM83OCAnPfe23fL6xA9--X/view?usp=share_link)
 
 Запрос 1. Получить список юзернеймов пользователей
 ```sql	
