@@ -38,7 +38,7 @@
 	SELECT username, AVG(cnt) AS "average number of sent messages"
 	FROM(
 	SELECT messages.from, COUNT(*) AS cnt
-	FROM message
+	FROM messages
 	GROUP BY messages.from
 	) AS message_count
 	JOIN users ON message_count.from = users.id
