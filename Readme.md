@@ -13,9 +13,9 @@
 [Cсылка на видео](https://drive.google.com/file/d/1Uj6TnLeH7DXjVmBWOl3Ho_jd8P-_D9Ra/view?usp=share_link)
 
 Запрос 1. Получить список юзернеймов пользователей
-	
+```sql	
 	SELECT username FROM users
-
+```
 Запрос 2. Получить количество отправленных сообщений каждым пользователем
 	
 	SELECT u.username, COUNT(m.id) AS number_of_sent_messages
